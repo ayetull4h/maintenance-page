@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<title>maintenance page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<style>
+
+.sosyalbutonlar{
+	margin-top: 50px;
+	display: inline-block;
+	position: relative;
+	left: 15px;
+	}
+
+.sosyalbutonlar a  {
+  background:#b1b1b1;
+	text-decoration: none;
+	color: #FFF;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	border-radius: 10px;
+	margin-right: 20px;
+	font-size: 30px;
+	overflow: hidden;
+	position: relative;
+	line-height: 60px;
+	text-align: center;
+  }
+
+.sosyalbutonlar a{
+   transition: transform 0.4s linear 0s,
+	 border-top-left-radius 0.1s linear 0s,
+	 border-top-right-radius 0.1s linear 0.1s,
+	 border-bottom-right-radius 0.1s linear 0.2s,
+	 border-bottom-left-radius 0.1s linear 0.3s;
+}
+
+.sosyalbutonlar .facebook:hover {
+      background-color: #3b5998;
+      transform: rotate(360deg);
+      border-radius: 50%;
+}
+
+  .sosyalbutonlar .twitter:hover   {
+      background-color: #00aced;
+      transform: rotate(360deg);
+      border-radius: 50%;
+}
+
+ .sosyalbutonlar .instagram:hover   {
+      background-color: #bc2a8d;
+      transform: rotate(360deg);
+      border-radius: 50%;
+}
+    </style>
+</head>
+<body>
+	<div class="anim" id="anim">
+	</div>
+
+	<div class="bg-g1 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-t-55 p-b-35 respon1">
+		<div class="flex-col-c p-t-50 p-b-50">
+			<h3 class="l1-txt1 txt-center p-b-10">
+				maintenance
+			</h3>
+
+			<p class="txt-center l1-txt2 p-b-60">
+			Our site is currently under maintenance.
+			</p>
+
+			<div class="sosyalbutonlar">
+
+      <a href="http://facebook.com/" target="_blank" class="facebook">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+			</a>
+      <a href="http://twitter.com/" target="_blank" class="twitter">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+			</a>
+      <a href="http://instagram.com/" target="_blank" class="instagram">
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+			</a>
+
+			</div>
+
+		</div>
+
+		<span class="s1-txt3 txt-center">
+			@ 2022 example.com
+		</span>
+
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+	<script>
+	VANTA.BIRDS({
+		el: "#anim",
+		mouseControls: true,
+		touchControls: true,
+		gyroControls: false,
+		minHeight: 600,
+		minWidth: 300,
+		scale: 1.00,
+		scaleMobile: 1.00,
+		backgroundAlpha: 0.00
+	})
+	</script>
+</body>
+</html>
